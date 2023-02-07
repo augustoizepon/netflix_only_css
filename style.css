@@ -8,15 +8,12 @@ html body {
     background-color: rgb(13, 13, 10);
 }
 html{
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 body{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center !important;
     background: url(https://cdn.pixabay.com/photo/2013/07/12/14/06/spotlight-147742_960_720.png) no-repeat;
 }
 
@@ -26,9 +23,9 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding:px;
     margin: 0px;
-    width: 500px;
+    width: 100vw;
+    align-self: center;
 }
 
 .netflix-logo{
@@ -51,7 +48,7 @@ body{
     padding: 30px;
     font-family: 'Mukta', sans-serif;
     margin-bottom: ;
-    font-size: 30px;
+    font-size: 25px;
     letter-spacing: 5px;
     width: 500px;
 }
@@ -85,6 +82,29 @@ input:hover{
 .above-span{
     color: rgb(123, 123, 123);
     text-decoration: rgb(44, 44, 44);
+
+}
+
+
+
+@media (width: 500px) {
+    .container{
+        width: 400px;
+
+    }
+    .netflix-logo{
+        width: 200px;
+    }
+    .login{
+        width: 400px;
+    }
+    .login-span{
+        width: 400px;
+    }
+    .above{
+        flex-direction: column;
+        justify-content: right;
+    }
 
 }
 
